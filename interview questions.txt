@@ -1,0 +1,96 @@
+Data Types
+1. Is complex data type conversion to any other data type is possible. If yes/no please explain with valid reason?(Complex not possible)
+Ans1. No,complex data type conversion is not possible to any other data type,because it cannot be converted diretly to any other data
+type in a single step. 
+
+2. The if conditional statement works on basis of which data types?(Boolean)
+Ans2. if condition works on principle of boolean data type as it returns either a True value if condition is satisfied or else
+returns False.
+
+3. Explain mutable and immutable data types along with thier examples?
+Ans3. Mutable data types are those in which modifications are possible. For example (list,set,dictionary). In these data types
+we can append,delete,sort the data. Immutable data types are those data types in which we cannot modify the values. For example
+(tuple,int,float,string) in which we cannot append,delete,sort the values 
+
+4. In which data type duplicate values are not possible?(Set)
+Ans4. Set is a mutuable data type. It is represented by curly brackets. In this data type duplicate values are not possible 
+
+5. Explain difference between list and tuple?(Mutable and Immutable)
+Ans5. List is mutable data type. We can add,delete,sort values in list. Tuple is immutable data type. In this we cannot modify the 
+values once stored. Tuples are faster than lists. Tuples are enclosed in paraenthesis while list are enclosed in square brackets.
+
+6. What does sequence mean and which data types fall into this category?(List,Tuple,String)
+Ans6. Sequence means a positional ordered collection of items.Like in list,tuple,string we can call any parameter using index. In 
+python sequence index starts with 0 not with 1.
+
+OPERATORS
+1.What is difference between = and ==?
+Ans1. "=" this operater is assignment operater which is used to assign a particular value to any variable whereas,"==" operater is
+comparison operator which is used to compare any two values in python.
+
+2. What is difference between is and == operator?
+Ans2.The == operator compares the value or equality of two objects, whereas the Python "is" operator checks whether two variables 
+point to the same object in memory.
+
+3. What is output of // operator? (floor division operator)
+Ans3. "//" this is a floor division operator. It divides the two numbers and round off the answer to nearst integer.
+
+4. What is membership operator?
+Ans4. "in" and "not in" are two membership operators in python.These are used to validate the membership of value."in" returns True
+if a sequence within the specified value is present in object,"not in" returns True if sequence within 
+the specified value is not present in object.
+
+5. Explain logical operators?
+Ans5. and,or,not are the three logical opertors."and" operator returns true if both the conditions are satisfied in a program
+"or" operator returns True if atleast one of the conditions is satisfied in a program,"not" returns True if conditions is satisfied
+else returns False.
+
+LOOP STATEMENTS
+1.Can we use break and continue together in python?
+Ans1.Yes we can use both break and continue together as break will stop the current loop from execution while continue will jump
+to another loop. 
+
+2.Why do we need continue and break in loop?
+Ans2.Continue helps in controlling the python loop by making jumps to next iteration of loop without exhausting the current loop
+whereas break helps in breaking the current loop from execution and transfer the control to next block.
+
+3. Define pass statement in python?
+Ans3.It is used when we cannot decide what to do in our code ,but we must type something for making syntactically correct 
+
+4. What is difference between For and While loop?
+Ans4.For loop is used when we know the specific number of iteration to occur whereas while loop is used when we are not confirmed
+with how many iterations are to be performed
+
+CONDITIONAL STATEMENT
+1. Why we use ladder if statement?
+Ans1. We use ladder if statement if we want to check all the if statements even if we get the correct answer at first if statement 
+only.
+
+2.Is there any limit of statement that appear under if block? (No)
+Ans2. There is not any limit of statement under the if block. We can write as many lines of logic as we want.
+
+3.Write a python program to display last digit of number using if statement?
+Ans3.number=int(input("Enter a number:"))
+     if number%10!=0:
+    	print(f"The last digit of a {number} is:",number%10)
+
+4.What is use of nested if statement and explain with an example?
+Ans4. Nested IF functions, meaning one IF function inside of another, allow us to test multiple criteria and increases
+ the number of possible outcomes. For eg:
+age= int(input("Enter your age:"))
+experience=int(input("Enter your exp:"))
+quali=int(input("Enter your qualification="))
+if age >=18:
+    if experience>=2:
+        print("You are eligible to work in our organisation")
+    else:
+        print("You are not eligible")
+else:
+    print("You are still unexperienced and under age")
+
+
+5. Can we write if-else statement in one line in python? Explain with example. (Yes we can write)
+Ans5. We can write if-else statement in single line. We can also write using lambda function. For eg
+age=int(input("Enter the age"))
+age_check= 'Adult' if age>=18 else 'Minor'
+print(age_check)
